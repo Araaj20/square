@@ -1,0 +1,21 @@
+.square {
+    height: 200px;
+    width: 200px;
+    background-color: #ecd615;
+    transition: transform 2s;
+}
+
+.flx {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 32px;
+}
+
+.square:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.square:hover ~ .square {
+    transform: scale(0.7 ,0.7);
+}
